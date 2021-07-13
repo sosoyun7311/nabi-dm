@@ -1,0 +1,2 @@
+com/dm/nabidm/NabiDmApplicationTests.java
+ com.dm.nabidm.NabiDmApplicationTests

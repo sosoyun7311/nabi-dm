@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: development
+  security:
+    user:
+      name: admin
+      password: 1234
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    password: Biock1234
+    url: jdbc:postgresql://testdatabase.c9fezvivcite.ap-northeast-2.rds.amazonaws.com:5432/test
+    name: biock
+    generate-unique-name: true
+    hikari:
+      leak-detection-threshold: 60000
+      maximum-pool-size: 5
+      minimum-idle: 2
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+server:
+  port: 9999
+
